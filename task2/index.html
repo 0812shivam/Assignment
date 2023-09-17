@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Customizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Chocolate Customizer</h1>
+            <div id="cart-button">🛒</div>
+        </nav>
+    </header>
+    <h1>Chocolate Customizer</h1>
+    <div id="chocolate-options">
+        <div class="chocolate-item">
+            <div class="chocolate-card">
+                <img src="images\product1.jpg" alt="Chocolate 1">
+                <h3>Dairy Milk Silk</h3>
+                <p>Rs. 180</p>
+            </div>
+            <input type="checkbox" id="choco1" class="chocolate-checkbox">
+            <input type="number" id="quantity1" class="quantity-input" min="0" max="8" value="0">
+        </div>
+        <div class="chocolate-item">
+            <div class="chocolate-card">
+                <img src="images\product2.jpg" alt="Chocolate 2">
+                <h3>Amul Dark Chocolate</h3>
+                <p>Rs. 120</p>
+            </div>
+            <input type="checkbox" id="choco2" class="chocolate-checkbox">
+            <input type="number" id="quantity2" class="quantity-input" min="0" max="8" value="0">
+        </div>
+        <div class="chocolate-item">
+            <div class="chocolate-card">
+                <img src="images\product3.jpg" alt="Chocolate 3">
+                <h3>Hershey Kisses</h3>
+                <p>Rs. 400</p>
+            </div>
+            <input type="checkbox" id="choco3" class="chocolate-checkbox">
+            <input type="number" id="quantity3" class="quantity-input" min="0" max="8" value="0">
+        </div>
+        <!-- Add more chocolate options here -->
+    </div>
+    
+    <div id="custom-pack">
+        <h2>Your Custom Pack</h2>
+        <ul id="selected-chocolates">
+            <!-- Selected chocolates will appear here -->
+        </ul>
+        <p>Total Price: Rs.<span id="total-price">0.00</span></p>
+    </div>
+    <div id="cart-popup" class="popup">
+        <div id="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Selected items will appear here -->
+            </ul>
+            <p>Total Price: Rs.<span id="cart-total-price">0.00</span></p>
+            <button class="popup-button" id="checkout-button">Checkout</button> 
+            <button class="popup-button"  id="close-popup">Close</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>We are a company committed to <br>providing high-qualityproducts and <br>excellent customer service.</p>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+            
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <!-- Add more links as needed -->
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Your Company Name</p>
+    </footer>
+   
+    <script src="script.js"></script>
+</body>
+</html>
